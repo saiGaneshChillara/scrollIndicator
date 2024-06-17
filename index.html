@@ -54,6 +54,7 @@
         currentProgress.style.width = `${percentage}%`;
     }
     async function initialize() {
+        currentProgress.style.width = "0%";
         await fetchData("https://dummyjson.com/products?limit=1000");
         //console.log(products);
         products.forEach(item => {
